@@ -1,0 +1,50 @@
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         font-family: "Oxanium", sans-serif;
+      }
+      body {
+        background-color: black;
+        background-image: url(/media/compete-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #clock {
+        margin-left: 50vw;
+        margin-top: 50vh;
+        translate: -50%;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 5rem;
+      }
+      .timeStyle {
+        color: aqua;
+        background-image: none;
+        background-color: transparent;
+      }
+      #timer {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid aqua; */
+        padding: 2rem 2rem;
+        margin-top: 50vh;
+        translate: -0% -50%;
+      }
+
+      @media (max-width: 375px) {
+        #clock {
+          margin-top: 70vh;
+          font-size: 3rem;
+        }
+        #timer {
+          margin-top: 0vh;
+          translate: -0% -5%;
+        }
+      }
